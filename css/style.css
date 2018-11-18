@@ -16,7 +16,7 @@
 /*setting background color of <body>*/
 
 body{
-    background-color: rgba(178,153,204);
+    background-color: rgba(178,153,204, .3);
 }
 
 /* styles applied to first letter of navbar brand */
@@ -31,11 +31,11 @@ body{
 /*setting background colors for small page elements*/
 
 .breadcrumb{
-    background-color:rgba(173,216,230);
+    background-color:rgba(173,216,230, .5);
 }
 
 [class^="card"] {
-    background-color:rgba(173,216,230);
+    background-color:rgba(173,216,230, .5);
     padding: 10px;
 }
 
