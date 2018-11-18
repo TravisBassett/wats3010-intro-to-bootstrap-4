@@ -19,7 +19,7 @@ body{
     background-color: rgba(178,153,204);
 }
 
-/* styles applied to first letter of navbar bran */
+/* styles applied to first letter of navbar brand */
 
 .navbar .navbar-brand::first-letter{
     font-weight: 900;
@@ -39,6 +39,10 @@ body{
     padding: 10px;
 }
 
+[class^="btn"] {
+    background-color:gray;
+}
+
 /* link styling */
 
 :any-link{
@@ -47,4 +51,10 @@ body{
 
 :any-link:hover{
     color: purple;
+}
+
+/*coloring added text in footer, outside of flex-box*/
+
+.colorize{
+    color: white;
 }
