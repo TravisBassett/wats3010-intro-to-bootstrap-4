@@ -13,11 +13,29 @@
     
 }
 
-/*setting background color of <body>*/
+/*animated background color, base code from https://codepen.io/metagrapher/pen/tgcLl*/
 
-body{
+    body {
+      animation: colorchange 17s; /* animation-name followed by duration in seconds*/
+      -webkit-animation: colorchange 17s; /* Chrome and Safari */
+    }
+
+    @keyframes colorchange
+    {
+      0%   {background: red;}
+      75%   {background: rgba(178,153,204, .5);}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: red;}
+      75%   {background: rgba(178,153,204, .5);}
+    }
+
+/*backup, nice background color
+/*body{
     background-color: rgba(178,153,204, .3);
-}
+}*/
 
 /* styles applied to first letter of navbar brand */
 
