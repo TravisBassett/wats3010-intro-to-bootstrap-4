@@ -13,6 +13,11 @@
     
 }
 
+/*using !important to set background color on .bg-dark, as seen on http://anthonygraf.com/wats3010-intro-to-bootstrap-4/ */
+.bg-dark{
+    background-color: purple!important;
+}
+
 /* styles applied to first letter of navbar brand */
 
 .navbar .navbar-brand::first-letter{
@@ -51,18 +56,18 @@ h1{
 /*animated background color, base code originally from https://codepen.io/metagrapher/pen/tgcLl*/
 
     body {
-      animation: colorchange 12s; /* animation-name followed by duration in seconds*/
-      -webkit-animation: colorchange 12s; /* Chrome and Safari */
+      animation: colorchange 6s; /* animation-name followed by duration in seconds*/
+      -webkit-animation: colorchange 6s; /* Chrome and Safari */
     }
 
     @keyframes colorchange
     {
       0%   {background: black;}
-      75%   {background: rgba(178,153,204, .5);}
+      100%   {background: rgba(178,153,204, .5);}
     }
 
     @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
     {
       0%   {background: black;}
-      75%   {background: rgba(178,153,204, .5);}
+      100%   {background: rgba(178,153,204, .5);}
     }
