@@ -45,6 +45,7 @@ body{
 
 /* link styling */
 
+/* I'm not sure about using this
 :any-link{
     color: white;
 }
@@ -52,6 +53,7 @@ body{
 :any-link:hover{
     color: purple;
 }
+*/
 
 /*coloring added text in footer, outside of flex-box*/
 
