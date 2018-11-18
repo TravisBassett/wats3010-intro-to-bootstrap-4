@@ -13,25 +13,6 @@
     
 }
 
-/*animated background color, base code from https://codepen.io/metagrapher/pen/tgcLl*/
-
-    body {
-      animation: colorchange 17s; /* animation-name followed by duration in seconds*/
-      -webkit-animation: colorchange 17s; /* Chrome and Safari */
-    }
-
-    @keyframes colorchange
-    {
-      0%   {background: blue;}
-      75%   {background: rgba(178,153,204, .5);}
-    }
-
-    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
-    {
-      0%   {background: blue;}
-      75%   {background: rgba(178,153,204, .5);}
-    }
-
 /* styles applied to first letter of navbar brand */
 
 .navbar .navbar-brand::first-letter{
@@ -62,7 +43,7 @@
     color: white;
 }
 
-/*animated background color, base code from https://codepen.io/metagrapher/pen/tgcLl*/
+/*animated background color, base code originally from https://codepen.io/metagrapher/pen/tgcLl*/
 
     body {
       animation: colorchange 17s; /* animation-name followed by duration in seconds*/
