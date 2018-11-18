@@ -33,6 +33,7 @@
     padding: 10px;
 }
 
+/*the botton on index.html and contact.html dispay diffrently when hovered over, probably because contact button is Javascript?*/
 [class^="btn"] {
     background-color:gray;
 }
