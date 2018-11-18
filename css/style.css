@@ -1,6 +1,6 @@
 /* Site Styles Go Here */
 
-/* flex box magic */
+/* flex box magic, don't touch! */
 
 .footer-flex{
     display:flex;
@@ -32,11 +32,6 @@
       75%   {background: rgba(178,153,204, .5);}
     }
 
-/*backup, nice background color
-/*body{
-    background-color: rgba(178,153,204, .3);
-}*/
-
 /* styles applied to first letter of navbar brand */
 
 .navbar .navbar-brand::first-letter{
@@ -61,20 +56,46 @@
     background-color:gray;
 }
 
-/* link styling */
-
-/* I'm not sure about using this
-:any-link{
-    color: white;
-}
-
-:any-link:hover{
-    color: purple;
-}
-*/
-
-/*coloring added text in footer, outside of flex-box*/
+/*coloring added text in footer outside of flex-box*/
 
 .colorize{
     color: white;
 }
+
+/*iage transparency fade-in on load*/
+
+    img {
+      animation: fadeinanimation 6s; /* animation-name followed by duration in seconds*/
+      -webkit-animation: fadeinanimation 6s; /* Chrome and Safari */
+    }
+
+    @keyframes fadeinanimation
+    {
+      0%   {opacity: 0.3;}
+      75%   {opacity: 1;}
+    }
+
+    @-webkit-keyframes fadeinanimation /*  Safari and Chrome - necessary duplicate */
+    {
+      0%   {opacity: 0.3;}
+      75%   {opacity: 1;}
+    }
+
+/*animated background color, base code from https://codepen.io/metagrapher/pen/tgcLl*/
+
+    body {
+      animation: colorchange 17s; /* animation-name followed by duration in seconds*/
+      -webkit-animation: colorchange 17s; /* Chrome and Safari */
+    }
+
+    @keyframes colorchange
+    {
+      0%   {background: black;}
+      75%   {background: rgba(178,153,204, .5);}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: black;}
+      75%   {background: rgba(178,153,204, .5);}
+    }
