@@ -21,13 +21,17 @@
 /* styles applied to first letter of navbar brand */
 
 .navbar .navbar-brand::first-letter{
-    border-style: dotted;
+    font-size: 1.6em;
+    /*
+    border-style: outset;
     padding: 2px;
     margin: 2px;
+    */
 }
 
 .navbar .navbar-brand{
     font-family: 'Ewert', cursive;
+    font-size: 1.2em;
 }
 
 /*setting background colors for small page elements*/
