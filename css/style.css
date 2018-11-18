@@ -1,5 +1,7 @@
 /* Site Styles Go Here */
 
+/* flex box magic */
+
 .footer-flex{
     display:flex;
     flex-direction:row;
@@ -11,9 +13,13 @@
     
 }
 
+/*setting background color of <body>*/
+
 body{
     background-color: rgba(178,153,204);
 }
+
+/* styles applied to first letter of navbar bran */
 
 .navbar .navbar-brand::first-letter{
     font-weight: 900;
@@ -22,6 +28,8 @@ body{
     margin: 3px;
 }
 
+/*setting background colors for small page elements*/
+
 .breadcrumb{
     background-color:rgba(173,216,230);
 }
@@ -29,4 +37,14 @@ body{
 [class^="card"] {
     background-color:rgba(173,216,230);
     padding: 10px;
+}
+
+/* link styling */
+
+:any-link{
+    color: white;
+}
+
+:any-link:hover{
+    color: purple;
 }
