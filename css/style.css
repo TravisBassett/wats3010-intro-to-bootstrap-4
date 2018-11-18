@@ -62,25 +62,6 @@
     color: white;
 }
 
-/*iage transparency fade-in on load*/
-
-    img {
-      animation: fadeinanimation 7s; /* animation-name followed by duration in seconds*/
-      -webkit-animation: fadeinanimation 7s; /* Chrome and Safari */
-    }
-
-    @keyframes fadeinanimation
-    {
-      0%   {opacity: 0.3;}
-      100%   {opacity: 1;}
-    }
-
-    @-webkit-keyframes fadeinanimation /*  Safari and Chrome - necessary duplicate */
-    {
-      0%   {opacity: 0.3;}
-      100%   {opacity: 1;}
-    }
-
 /*animated background color, base code from https://codepen.io/metagrapher/pen/tgcLl*/
 
     body {
