@@ -37,6 +37,10 @@
     background-color:gray;
 }
 
+h1{
+    padding-top: 20px;
+}
+
 /*coloring added text in footer outside of flex-box*/
 
 .colorize{
