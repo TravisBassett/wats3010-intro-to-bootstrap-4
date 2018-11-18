@@ -33,7 +33,7 @@
     padding: 10px;
 }
 
-/*the botton on index.html and contact.html dispay diffrently when hovered over, probably because contact button is Javascript?*/
+/*the button on index.html and contact.html dispay diffrently when hovered over, probably because contact button is Javascript?*/
 [class^="btn"] {
     background-color:gray;
 }
@@ -42,7 +42,7 @@ h1{
     padding-top: 20px;
 }
 
-/*coloring added text in footer outside of flex-box*/
+/*correct coloring added text in footer outside of flex-box*/
 
 .colorize{
     color: white;
@@ -51,8 +51,8 @@ h1{
 /*animated background color, base code originally from https://codepen.io/metagrapher/pen/tgcLl*/
 
     body {
-      animation: colorchange 17s; /* animation-name followed by duration in seconds*/
-      -webkit-animation: colorchange 17s; /* Chrome and Safari */
+      animation: colorchange 12s; /* animation-name followed by duration in seconds*/
+      -webkit-animation: colorchange 12s; /* Chrome and Safari */
     }
 
     @keyframes colorchange
