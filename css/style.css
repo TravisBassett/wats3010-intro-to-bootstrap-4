@@ -1,7 +1,6 @@
-/* Site Styles Go Here */
+/* Site Styles*/
 
 /* flex box magic, don't touch! */
-
 .footer-flex{
     display:flex;
     flex-direction:row;
@@ -10,7 +9,6 @@
 
 .footer-item-flex{
     flex: 0 1 auto;
-    
 }
 
 /*using !important to set background color on .bg-dark, as seen on http://anthonygraf.com/wats3010-intro-to-bootstrap-4/ */
@@ -18,19 +16,49 @@
     background-color: purple!important;
 }
 
+/*START section that uses media-queries to format brand element in nav-bar*/
+/* sets default size of font for navbar brand text*/
 /* style applied to first letter of navbar brand */
 .navbar .navbar-brand::first-letter{
-    font-size: 1.6em;
+    font-size: 2.5em;
 }
 
-/*font applied to .navbar-brand*/
+/*font and default size applied to rest of .navbar-brand letters*/
 .navbar .navbar-brand{
     font-family: 'Ewert', cursive;
-    font-size: 1.2em;
+    font-size: 2em;
 }
 
-/*setting background colors for small page elements*/
+/* On screens that are 992px or less, sets size of font for navbar brand text*/
+@media screen and (max-width: 992px) {
 
+    /* style applied to first letter of navbar brand */
+    .navbar .navbar-brand::first-letter{
+        font-size: 2em;
+    }
+    /*font applied to .navbar-brand*/
+    .navbar .navbar-brand{
+        /*font-family: 'Ewert', cursive;*/
+        font-size: 1.5em;
+    }
+}
+
+/* On screens that are 600px or less, sets size of font for navbar brand text*/
+@media screen and (max-width: 600px) {
+
+    /* style applied to first letter of navbar brand */
+    .navbar .navbar-brand::first-letter{
+    font-size: 1.6em;
+}
+    /*font applied to .navbar-brand*/
+    .navbar .navbar-brand{
+        /*font-family: 'Ewert', cursive;*/
+        font-size: 1.2em;
+    }
+}
+/*END section that uses media-queries to format brand element in nav-bar*/
+
+/*setting background colors for small page elements*/
 .breadcrumb{
     background-color:rgba(173,216,230, .5);
 }
@@ -46,7 +74,7 @@
 }
 
 h1{
-    padding-top: 40px;
+    padding-top: 70px;
 }
 
 /*correct coloring added text in footer outside of flex-box*/
@@ -56,7 +84,6 @@ h1{
 }
 
 /*animated background color, base code originally from https://codepen.io/metagrapher/pen/tgcLl*/
-
     body {
       animation: colorchange 5s; /* animation-name followed by duration in seconds*/
       -webkit-animation: colorchange 5s; /* Chrome and Safari */
