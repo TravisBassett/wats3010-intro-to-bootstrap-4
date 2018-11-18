@@ -22,13 +22,13 @@
 
     @keyframes colorchange
     {
-      0%   {background: red;}
+      0%   {background: blue;}
       75%   {background: rgba(178,153,204, .5);}
     }
 
     @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
     {
-      0%   {background: red;}
+      0%   {background: blue;}
       75%   {background: rgba(178,153,204, .5);}
     }
 
