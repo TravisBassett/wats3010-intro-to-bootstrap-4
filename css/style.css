@@ -18,17 +18,12 @@
     background-color: purple!important;
 }
 
-/* styles applied to first letter of navbar brand */
-
+/* style applied to first letter of navbar brand */
 .navbar .navbar-brand::first-letter{
     font-size: 1.6em;
-    /*
-    border-style: outset;
-    padding: 2px;
-    margin: 2px;
-    */
 }
 
+/*font applied to .navbar-brand*/
 .navbar .navbar-brand{
     font-family: 'Ewert', cursive;
     font-size: 1.2em;
