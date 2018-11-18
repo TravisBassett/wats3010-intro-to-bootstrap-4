@@ -17,4 +17,7 @@ body{
 
 .navbar .navbar-brand::first-letter{
     font-weight: 900;
+    border-style: dotted;
+    padding: 3px;
+    margin: 3px;
 }
