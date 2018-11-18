@@ -21,10 +21,13 @@
 /* styles applied to first letter of navbar brand */
 
 .navbar .navbar-brand::first-letter{
-    font-weight: 900;
     border-style: dotted;
-    padding: 3px;
-    margin: 3px;
+    padding: 2px;
+    margin: 2px;
+}
+
+.navbar .navbar-brand{
+    font-family: 'Ewert', cursive;
 }
 
 /*setting background colors for small page elements*/
@@ -56,8 +59,8 @@ h1{
 /*animated background color, base code originally from https://codepen.io/metagrapher/pen/tgcLl*/
 
     body {
-      animation: colorchange 6s; /* animation-name followed by duration in seconds*/
-      -webkit-animation: colorchange 6s; /* Chrome and Safari */
+      animation: colorchange 5s; /* animation-name followed by duration in seconds*/
+      -webkit-animation: colorchange 5s; /* Chrome and Safari */
     }
 
     @keyframes colorchange
