@@ -21,3 +21,12 @@ body{
     padding: 3px;
     margin: 3px;
 }
+
+.breadcrumb{
+    background-color:rgba(173,216,230);
+}
+
+[class^="card"] {
+    background-color:rgba(173,216,230);
+    padding: 10px;
+}
