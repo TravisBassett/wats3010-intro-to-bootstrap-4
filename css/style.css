@@ -14,3 +14,7 @@
 body{
     background-color: rgba(178,153,204);
 }
+
+.navbar .navbar-brand::first-letter{
+    font-weight: 900;
+}
