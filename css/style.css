@@ -16,9 +16,9 @@
     background-color: purple!important;
 }
 
-/*adjusts location of carousel section so the nav-bar doesn't overlap on different screen sizes, unfortunately creates a white space above the carousel item on some smaller screen sized, but it's better than overlapping. This is the default size, smaller paddings are incorporated into media-queries bellow*/
+/*adjusts location of carousel section so the nav-bar doesn't overlap on different screen sizes, unfortunately creates a white space above the carousel item on some smaller screen sized unless corrected for. This is the default size, smaller paddings are incorporated into media-queries bellow*/
 .carousel-inner{
-    padding-top: 85px;
+    padding-top: 90px;
 }
 
 /*START section that uses media-queries to format brand element in nav-bar and padding between nav-bar and carousel, see above rule*/
@@ -32,6 +32,15 @@
 .navbar .navbar-brand{
     font-family: 'Ewert', cursive;
     font-size: 2em;
+}
+
+/*sets carousel padding for screen widths less than 1200px*/
+@media screen and (max-width: 1200px) {
+    
+    /*padding for carousel bellow nav-bar*/
+    .carousel-inner{
+    padding-top: 70px;
+    }  
 }
 
 /* On screens that are 992px or less, sets size of font for navbar brand text*/
@@ -49,7 +58,7 @@
     
     /*padding for carousel bellow nav-bar*/
     .carousel-inner{
-    padding-top: 50px;
+    padding-top: 40px;
     }  
 }
 
@@ -68,7 +77,7 @@
     
     /*padding for carousel bellow nav-bar*/
     .carousel-inner{
-    padding-top: 25px;
+    padding-top: 15px;
     }
 }
 /*END section that uses media-queries to format brand element in nav-bar*/
